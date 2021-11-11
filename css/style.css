@@ -1,0 +1,607 @@
+/*------------------- 
+　　　　全体共通
+ -------------------*/
+body{
+    font-family: 'ＭＳ Ｐ明朝', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','MS PMincho', serif;
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+}
+.page{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* トップページ以外共通 */
+.others h2{
+    font-size: 50px;
+    text-align: center;
+    margin: 60px auto 10px auto;
+}
+.others h3{
+    font-size: 35px;
+}
+.others h4{
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+/* トップへ戻るボタン */
+.fas{
+    color: #ef464d;
+    background-color: #fff;
+    font-size: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 200px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+.breadcrumb{
+    font-size: 18px;
+    width: 960px;
+    margin: 60px auto;
+}
+.breadcrumb ul{
+    display: flex;
+}
+.breadcrumb a{
+    color: #ef464d;
+}
+/* -------------------
+　　　　ヘッダー
+---------------------*/
+header{
+    background-color: #ef464d;
+    height: 207px;
+    padding-top: 47px;
+}
+header .inner{
+    background-color: #fff;
+    border: 3px solid #ef464d;
+    height: 160px;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header li{
+    text-align: center;
+    margin-right: 40px;
+}
+header a{
+    font-size: 23px;
+    color: #000;
+    text-decoration: none;
+    
+}
+header a .english-list{
+    font-size: 16px;
+}
+
+header li a:hover{
+    color: #ef464d;
+}
+
+/* ------------------
+     フッター
+------------------ */
+footer{
+    background-color: #ef464d;
+    height: 300px;
+    padding-top: 47px;
+    color: #fff;
+
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.6;
+}
+footer .inner{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+footer .footer-wrap{
+    margin-right: 60px;
+}
+footer p{
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+footer ul{
+    width: 170px;
+    height: 190px;
+}
+footer li a:hover{
+    background-color: #fff;
+    color: #ef464d;
+}
+
+/* -------------------
+　　　サイド
+---------------------*/
+aside{
+    width: 340px;
+
+}
+.info{
+    background-color: #ddd;
+    height: 680px;
+    padding: 10px;
+    text-align: center;
+}
+/* ニュース */
+aside .news{
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+aside h3{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+aside h5{
+    font-size: 16px;
+}
+/* ニュースタイトルのデザイン */
+aside .news-title{
+    text-align: center;
+    border:  1px solid #000;
+    width: 260px;
+    height: 75px;
+    margin: 0 0 40px 30px;
+}
+
+aside .news ul{
+    padding: 0 20px 40px 20px;
+    text-align: left;
+}
+aside .news li{
+    line-height: 1.5;
+}
+aside .news a{
+    color: #ef464d;
+}
+aside .news a:hover{
+    background-color:#ef464d;
+    color: #fff;
+}
+
+/* SNS */
+aside .sns ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+aside .sns a{
+    text-decoration: none;
+    color: #000;
+}
+aside .sns .fab{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 50px;
+}
+aside  .fa-twitter{
+    color: #fff;
+    background-color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+aside .fa-youtube{
+    color: #f70000;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+aside .sns img{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    background-color: #fff;
+
+}
+
+
+/* マップ */
+.map{
+    margin-top: 60px;
+    background-color: #ef464d;
+    width: 340px;
+    color: #fff;
+}
+iframe{
+    margin: 20px 0 0 20px;
+    height: 400px;
+}
+.map p{
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+ 
+}
+/*---------------------
+    ニュース本文共通
+--------------------  */
+#news main{
+    text-align: left;
+    margin-left: 40px;
+}
+
+#news main h3,
+#news main h4,
+#news main p{
+    margin-bottom: 60px;
+}
+#news main h4,
+#news main p{
+width: 450px;
+margin-left: 50px;
+text-align: left;
+
+}
+#news main p{
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.6;
+
+}
+
+/*---------------------
+    メイン部分共通
+--------------------  */
+.content{
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 60px 0 60px 0;
+}
+main{
+    width: 610px;
+}
+
+
+/* -------------------
+ 　トップページ
+---------------------*/
+
+/* メインイメージ */
+#toppage .main-image img{
+    text-align: center;
+    width: 1040px;
+    margin: 0 auto;
+}
+#toppage .main-image{
+    width: 1100px;
+    margin: 0 auto;    
+    background-color:#ef464d;
+    height: 725px;
+
+
+
+}
+#toppage .main-image h2{
+background-color: #ffffff80;
+font-size: 50px;
+padding: 10px;
+position: absolute;
+top: 700px;
+left: 480px;
+
+}
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    left: 0;
+    background-color: transparent;
+    margin: 0 auto;
+   }
+
+
+
+/* トップページ学科紹介部分 */
+
+#toppage .department{
+    text-align: center;
+    margin: 40px 0;
+}
+#toppage .department ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#toppage .department img{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 40px;
+}
+#toppage .department a {
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+}
+#toppage .department li a h3{
+    font-size: 25px;
+    width: 275px;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 25px;
+    /* 文章横揃え用 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#toppage .department li a h3:last-child{
+    font-size: 10px;
+}
+#toppage .department li a h4{
+    width: 275px;
+    height: 60px;
+     /* 文章横揃え用 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#toppage .department li a p {
+    width: 275px;
+    height: 60px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+#toppage .department a:hover{
+    color: #ef464d;
+}
+
+/* メインフレーズ */
+
+#toppage main{
+    background-color: #ef464d;
+    width: 610px;
+    height: 680px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#toppage main h2{
+    font-size: 30px;
+    margin: 60px -80px 40px 0;
+}
+#toppage main img{
+   margin: 20px 0 0 -30px;
+}
+#toppage main h3{
+    font-size: 25px;
+}
+#toppage main p{
+    margin-bottom: 40px;
+}
+    
+#toppage main .catch-copy{    
+    background-color: #fff;
+    width: 390px;
+    height: 250px;
+    color: #000;
+    text-align: center;
+    line-height: 1.5;
+    margin: -10px -80px 60px 0;
+    padding: 40px 0;
+    /* ↓内側飾り線 */
+    outline: 2px solid #ef464d;
+    outline-offset: -20px;
+}
+
+/* -------------------
+ 　大学概要ページ
+---------------------*/
+/* メインイメージ */
+
+/* 大学概要 */
+.about{
+    background-color: #ef464d;
+    color: #fff;
+    width: 540px;
+    height: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+.about h3{
+    font-size: 25px;
+    text-align: center;
+    margin:30px 0 60px 0;
+
+}
+/* 学長メッセージ */
+.gakucho{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.gakucho-title{
+    margin: 80px 30px 150px 80px;
+}
+.text p{
+    background-color: #fff;
+    border: 20px solid #ef464d;
+    color: #000;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 18px;
+}
+.name {
+    font-size: 16px;
+    padding-top: 30px;
+}
+/* -------------------
+ 　学科紹介ページ
+---------------------*/
+/* メインイメージ */
+.department-image img{
+    text-align: center;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#department main section{
+    width: 590px;
+    background-color: #ef464d;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#department main section:nth-child(2){
+   background-color: #ddd;
+   color: #000;
+}
+#department section:last-child{
+    background-color: #ddd;
+    color: #000;
+ }
+ 
+.department-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main .card{
+    text-align: center;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:20px 40px 0 0;
+
+}
+#department main h3{
+    font-size: 25px;
+    line-height: 1.6;
+}
+#department main p{
+    margin:20px 30px 0 0;
+    width: 310px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* -----------------------------
+ 　在校生・卒業生メッセージページ
+--------------------------------*/
+#message main img{
+    margin-bottom: 60px;
+}
+/* 個別ページ*/
+#message main .profile{
+    width: 960px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.6;
+}
+#message main .profile h3{
+    font-size: 35px;
+}
+#message main .profile h4{
+    font-size: 30px;
+}
+#message main .profile h5{
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+#message main .profile h6{
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+#message main .detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ef464d;
+    color: #fff;
+    width: 450px;
+    height: 550px;
+    padding-top: 60px;
+    text-align: center;
+}
+#message main  p{
+    width: 960px;
+    border: 1px solid #000;
+    padding: 50px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+/* -----------------------------
+ 　就職・進路情報ページ
+--------------------------------*/
+#job main{
+    text-align: left;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#job main h3{
+    margin-bottom: 60px;
+    line-height: 1.8;
+    text-align: center;
+
+}
+#job main h4{
+    margin-bottom: 60px;
+    line-height: 1.6;
+    font-size: 20px;
+    text-align: left;
+
+}
+#job main h5{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+#job main p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+#job main img{
+    margin-bottom: 60px;
+}
