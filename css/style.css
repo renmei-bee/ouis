@@ -8,7 +8,7 @@ body{
     font-size: 16px;
 }
 .page{
-    width: 960px;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -34,8 +34,8 @@ body{
     background-color: #fff;
     font-size: 50px;
     position: fixed;
-    bottom: 100px;
-    right: 200px;
+    bottom: 20%;
+    right: 80px;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -147,6 +147,9 @@ aside{
 }
 .info{
     background-color: #ddd;
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+
     height: 680px;
     padding: 10px;
     text-align: center;
@@ -167,9 +170,9 @@ aside h5{
 aside .news-title{
     text-align: center;
     border:  1px solid #000;
-    width: 260px;
+    width: 100%;
     height: 75px;
-    margin: 0 0 40px 30px;
+    margin: 0 auto;
 }
 
 aside .news ul{
@@ -236,6 +239,8 @@ aside .sns img{
 .map{
     margin-top: 60px;
     background-color: #ef464d;
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
     width: 340px;
     color: #fff;
 }
@@ -254,9 +259,11 @@ iframe{
 --------------------  */
 #news main{
     text-align: left;
-    margin-left: 40px;
+    margin-right: 10px;
 }
-
+#news .content{
+    width: 100%;
+}
 #news main h3,
 #news main h4,
 #news main p{
@@ -264,8 +271,6 @@ iframe{
 }
 #news main h4,
 #news main p{
-width: 450px;
-margin-left: 50px;
 text-align: left;
 
 }
@@ -280,15 +285,15 @@ text-align: left;
     メイン部分共通
 --------------------  */
 .content{
-    width: 960px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 60px 0 60px 0;
+    margin: 60px 10px;
 }
-main{
-    width: 610px;
-}
+/* main{
+    width: 100%;
+} */
 
 
 /* -------------------
@@ -390,7 +395,7 @@ left: 480px;
 
 #toppage main{
     background-color: #ef464d;
-    width: 610px;
+    width: 65%;
     height: 680px;
     color: #fff;
     display: flex;
@@ -499,6 +504,7 @@ left: 480px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-right: ;
 }
 main .card{
     text-align: center;
@@ -527,12 +533,13 @@ main .card{
 #message main img{
     margin-bottom: 60px;
 }
-/* 個別ページ*/
+/* 生徒個別ページ*/
 #message main .profile{
-    width: 960px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     line-height: 1.6;
 }
 #message main .profile h3{
@@ -557,12 +564,12 @@ main .card{
     background-color: #ef464d;
     color: #fff;
     width: 450px;
-    height: 550px;
-    padding-top: 60px;
+    height: auto;
+    padding: 60px 10px;
     text-align: center;
 }
 #message main  p{
-    width: 960px;
+    width: 100%;
     border: 1px solid #000;
     padding: 50px;
     line-height: 1.6;
