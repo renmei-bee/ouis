@@ -11,9 +11,17 @@ body{
     width: 60%;
     margin: 0 auto;
 }
+main{
+    margin-right: 20px;
+}
 
 
 /* トップページ以外共通 */
+.about-image,
+.department-image{
+    width: 100%;
+    margin: 0 auto;
+}
 .others h2{
     font-size: 50px;
     text-align: center;
@@ -143,14 +151,12 @@ footer li a:hover{
 ---------------------*/
 aside{
     width: 340px;
-
 }
 .info{
     background-color: #ddd;
     border-right: 3px solid #fff;
     border-left: 3px solid #fff;
-
-    height: 680px;
+    height: au;
     padding: 10px;
     text-align: center;
 }
@@ -171,8 +177,9 @@ aside .news-title{
     text-align: center;
     border:  1px solid #000;
     width: 100%;
-    height: 75px;
-    margin: 0 auto;
+    height: auto;
+    margin: 0 auto 20px auto;
+    padding: 10px;
 }
 
 aside .news ul{
@@ -285,15 +292,12 @@ text-align: left;
     メイン部分共通
 --------------------  */
 .content{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 60px 10px;
+    margin: 60px 0;
 }
-/* main{
-    width: 100%;
-} */
 
 
 /* -------------------
@@ -303,18 +307,18 @@ text-align: left;
 /* メインイメージ */
 #toppage .main-image img{
     text-align: center;
-    width: 1040px;
     margin: 0 auto;
 }
 #toppage .main-image{
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;    
-    background-color:#ef464d;
     height: 725px;
-
-
-
 }
+#toppage .bxslider{
+    width: 1040px;
+    margin: 0 auto;
+}
+
 #toppage .main-image h2{
 background-color: #ffffff80;
 font-size: 50px;
@@ -395,7 +399,7 @@ left: 480px;
 
 #toppage main{
     background-color: #ef464d;
-    width: 65%;
+    width: 70%;
     height: 680px;
     color: #fff;
     display: flex;
@@ -424,7 +428,7 @@ left: 480px;
     color: #000;
     text-align: center;
     line-height: 1.5;
-    margin: -10px -80px 60px 0;
+    margin: -10px -50px 60px 0;
     padding: 40px 0;
     /* ↓内側飾り線 */
     outline: 2px solid #ef464d;
@@ -440,8 +444,8 @@ left: 480px;
 .about{
     background-color: #ef464d;
     color: #fff;
-    width: 540px;
-    height: 600px;
+    width: 90%;
+    /* height: 600px; */
     font-size: 18px;
     line-height: 1.6;
     padding: 20px;
@@ -454,13 +458,18 @@ left: 480px;
 
 }
 /* 学長メッセージ */
-.gakucho{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.president{
+    /* width: 630px; */
 }
 .gakucho-title{
-    margin: 80px 30px 150px 80px;
+    padding: 80px 50px 0 100px;
+
+}
+.gakucho{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
 }
 .text p{
     background-color: #fff;
@@ -480,12 +489,12 @@ left: 480px;
 /* メインイメージ */
 .department-image img{
     text-align: center;
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
 }
-
 #department main section{
-    width: 590px;
+    width:100%;
+    margin: 0 auto;
     background-color: #ef464d;
     color: #fff;
     padding: 20px;
@@ -503,25 +512,23 @@ left: 480px;
 .department-card{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 main .card{
     text-align: center;
-    width: 200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin:20px 40px 0 0;
-
+    margin:20px 20px 0 0;
 }
 #department main h3{
     font-size: 25px;
     line-height: 1.6;
 }
 #department main p{
-    margin:20px 30px 0 0;
-    width: 310px;
+    margin:20px 0px 0 0;
     line-height: 1.6;
     font-size: 18px;
 }
@@ -529,20 +536,25 @@ main .card{
 /* -----------------------------
  　在校生・卒業生メッセージページ
 --------------------------------*/
-#message main img{
-    margin-bottom: 60px;
+#message span{
+    margin-bottom: 50px;
+}
+#message aside{
+    margin-right: 50px;
+
 }
 /* 生徒個別ページ*/
 #message main .profile{
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 1.6;
+    /* line-height: 1.6; */
 }
 #message main .profile h3{
     font-size: 35px;
+    margin-bottom: 50px;
 }
 #message main .profile h4{
     font-size: 30px;
@@ -563,8 +575,7 @@ main .card{
     background-color: #ef464d;
     color: #fff;
     width: 450px;
-    height: auto;
-    padding: 60px 10px;
+    padding: 60px 10px 0 10px;
     text-align: center;
 }
 #message main  p{
